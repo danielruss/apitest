@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="apitest.css" />
+    <script src="apitest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
+  </head>
+
+  <script>
+    let txt = "";
+    async function lala() {
+      let fname = "mytestconfig.js";
+      txt = await (await fetch("mytestconfig.js")).text();
+      //console.log(txt);
+      eval(txt);
+      config.fun1a(document.getElementById("q"));
+    }
+    lala();
+  </script>
+  <body>
+    <div id="q"></div>
+    <!--    <script src="mytestconfig.js"></script> -->
+    <script>
+      //document.getElementsByTagName("body")[0].appendChild(script);
+    </script>
+  </body>
+</html>

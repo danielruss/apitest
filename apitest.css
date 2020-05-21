@@ -1,0 +1,21 @@
+input[type="radio"] {
+  visibility: hidden;
+}
+
+input[type="radio"] + label {
+  background-color: blue;
+  border: blue 3px;
+  color: whitesmoke;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+input[type="radio"]:hover + label {
+  background-color: royalblue;
+  border: blue 3px;
+}
+input[type="radio"]:checked + label {
+  background-color: beige;
+  color: brown;
+  border: blue 3px;
+}
